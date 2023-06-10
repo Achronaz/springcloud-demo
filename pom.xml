@@ -23,7 +23,9 @@
 
     <modules>
 
+        <module>inventory</module>
         <module>order</module>
+        <module>user</module>
     </modules>
 
     <dependencies>
@@ -35,7 +37,7 @@
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
+                <artifactId>spring-boot-starter-parent</artifactId>
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -70,6 +72,7 @@
     </build>
 
     <repositories>
+
         <repository>
             <id>spring-releases</id>
             <name>Spring Releases</name>
@@ -78,6 +81,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
