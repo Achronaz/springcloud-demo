@@ -1,12 +1,7 @@
 server:
-  port: 8082
+  port: 8030
 spring:
+  profiles:
+    active: dev
   application:
     name: order-service
-  cloud:
-    nacos:
-      server-addr: 192.168.1.79:8848
-      discovery:
-        username: nacos
-        password: nacos
-        namespace: public
