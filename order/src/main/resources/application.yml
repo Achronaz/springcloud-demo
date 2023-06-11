@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8030
 spring:
   application:
     name: order-service
@@ -10,3 +10,4 @@ spring:
         username: nacos
         password: nacos
         namespace: public
+        #ephemeral: false # permanent instance

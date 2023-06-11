@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8020
 spring:
   application:
     name: user-service
@@ -10,3 +10,4 @@ spring:
         username: nacos
         password: nacos
         namespace: public
+        #ephemeral: false # permanent instance
