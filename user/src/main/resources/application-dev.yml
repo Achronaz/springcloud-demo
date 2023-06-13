@@ -1,6 +1,6 @@
 spring:
   config:
-    import: "nacos:user-service-dev.yaml"
+    import: "nacos:user-service"
   cloud:
     nacos:
       server-addr: 192.168.1.79:8848
@@ -8,7 +8,7 @@ spring:
       password: nacos
       discovery:
         group: DEFAULT_GROUP
-        namespace: public
+        namespace: dev
       config:
         group: DEFAULT_GROUP
-        namespace: public
+        namespace: dev
